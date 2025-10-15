@@ -5,7 +5,7 @@ import Create from "./Components.jsx/Create"
 function App() {
   return (
     <>
-      {/* <Navbar></Navbar> */}
+      <Navbar></Navbar>
       <Create></Create>
       <Footer></Footer>
     </>
