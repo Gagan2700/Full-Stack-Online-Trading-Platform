@@ -53,7 +53,7 @@ const quickLinks=[
 const Footer = () => {
   return ( 
     <div className="bg-[#FBFBFB] w-[100%] h-[auto] px-5 lg:px-[13rem] overflow-x-hidden">
-      <div className="flex py-4 justify-between gap-[2rem]">
+      <div className="flex sm:flex-row flex-col py-4 justify-between gap-[2rem]">
           <div className="flex flex-col gap-3">
               <div>
               <img src="./zerodha-logo.jpg" alt="" className="h-[3rem] "/>
@@ -93,7 +93,7 @@ const Footer = () => {
 
   "Prevent unauthorised transactions in your account. Update your mobile numbers/email IDs with your stock brokers. Receive information of your transactions directly from Exchange on your mobile/email at the end of the day. Issued in the interest of investors. KYC is one time exercise while dealing in securities markets - once KYC is done through a SEBI registered intermediary (broker, DP, Mutual Fund etc.), you need not undergo the same process again when you approach another intermediary." Dear Investor, if you are subscribing to an IPO, there is no need to issue a cheque. Please write the Bank account number and sign the IPO application form to authorize your bank to make payment in case of allotment. In case of non allotment the funds will remain in your bank account. As a business we don't give stock tips, and have not authorized anyone to trade on behalf of others. If you find anyone claiming to be part of Zerodha and offering such services, please create a ticket here.
       </p>
-      <div className="flex justify-between items-center px-[7rem] py-[1rem]">
+      <div className="flex justify-between items-center lg:px-[7rem] lg:py-[1rem] flex-wrap lg:flex-nowrap px-[2rem] py-[3rem] lg:gap-0 gap-5">
         <a href="" className="rep text-[.9rem] text-gray-500 hover:text-blue-500">NSE</a>
         <a href="" className="rep text-[.9rem] text-gray-500 hover:text-blue-500">BSE</a>
         <a href="" className="rep text-[.9rem] text-gray-500 hover:text-blue-500">MCX</a>
