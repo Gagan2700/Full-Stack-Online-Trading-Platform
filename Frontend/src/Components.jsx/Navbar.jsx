@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="lg:fixed lg:t-0 flex w-[100%] items-center justify-between py-3 mainpad border border-b border-gray-300 bg-white">
+      <div className="lg:fixed lg:top-0 flex w-[100%] items-center justify-between py-3 mainpad border border-b border-gray-300 bg-white">
         <div>
           <img src="/zerodha-logo.jpg" alt="Logo" className="w-[9rem] cursor-pointer" onClick={handleClick}/>
         </div>
