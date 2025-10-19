@@ -3,13 +3,13 @@ import logo from '/nithinKamath.jpg'
 const About = () => {
   return (
     <>
-      <div className="h-[40vh] flex items-center justify-center flex-col mt-5 border-gray-200 border-b-1 mainmar mb-[8rem]">
-        <h1 className="text-[1.5rem] font-all">We pioneered the discount broking model in India.
+      <div className="h-[45vh] flex items-center justify-center flex-col mt-[2rem] border-gray-200 border-b-1 mainmar mb-[8rem]">
+        <h1 className="text-[1.6rem] font-all text-gray-800">We pioneered the discount broking model in India.
           <br />
           Now, we are breaking ground with our technology.
         </h1>
       </div>
-      <div className="flex justify-between mainpad mb-[10rem]">
+      <div className="flex justify-between mainpad mb-[8rem]">
         <div className="flex flex-col gap-6 w-[45%] pl-[6.5rem]">
           <p className="aboutps">
             We kick-started operations on the 15th of August, 2010 with the goal of breaking all barriers that traders and investors face in India in terms of cost, support, and technology. We named the company Zerodha, a combination of Zero and "Rodha", the Sanskrit word for barrier.
@@ -35,7 +35,7 @@ const About = () => {
       </div>
       <div className='flex flex-col justify-between items-center'>
         <h1 className='text-[1.5rem] text-gray-800 font-all'>People</h1>
-        <div className="flex justify-between mainpad mb-[7rem] mt-[5rem]">
+        <div className="flex justify-between mainpad mb-[9rem] mt-[5rem]">
           <div className='flex flex-col gap-6 w-[35%] pl-[6.5rem] justify-between items-center'>
             <img src={logo} alt="" className='rounded-full w-[20rem]'/>
             <h1 className='text-[1.2rem]'>Nithin kamath</h1>
