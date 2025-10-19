@@ -18,4 +18,16 @@
     .mainpad{
         @apply px-5 lg:px-[13rem];
     }
+
+    .mainmar{
+        @apply mx-5 lg:mx-[13rem];
+    }
+
+    .aboutps{
+        @apply text-[1.1rem] font-all text-gray-600 leading-7;
+    }
+
+    span{
+        @apply text-blue-500 hover:text-gray-800 cursor-pointer;
+    }
 }
