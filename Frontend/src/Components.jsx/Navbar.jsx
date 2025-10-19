@@ -1,6 +1,6 @@
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 import { useState, useEffect } from "react";
-import {Link, useNavigate} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -24,11 +24,11 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex items-center gap-10 text-gray-500 font-all">
-          <Link to="/signup" className="hover:text-blue-400 transition-colors">Signup</Link>
-          <Link to="/about" className="hover:text-blue-400 transition-colors">About</Link>
-          <Link to="/products" className="hover:text-blue-400 transition-colors">Products</Link>
-          <Link to="/pricing" className="hover:text-blue-400 transition-colors">Pricing</Link>
-          <Link to="/support" className="hover:text-blue-400 transition-colors">Support</Link>
+          <NavLink to="/signup" className="hover:text-blue-400 transition-colors" style={({ isActive }) => ({color: isActive ? '#6DA2FF' : '',})} >Signup</NavLink>
+          <NavLink to="/about" className="hover:text-blue-400 transition-colors" style={({ isActive }) => ({color: isActive ? '#6DA2FF' : '',})}>About</NavLink>
+          <NavLink to="/products" className="hover:text-blue-400 transition-colors" style={({ isActive }) => ({color: isActive ? '#6DA2FF' : '',})}>Products</NavLink>
+          <NavLink to="/pricing" className="hover:text-blue-400 transition-colors" style={({ isActive }) => ({color: isActive ? '#6DA2FF' : '',})}>Pricing</NavLink>
+          <NavLink to="/support" className="hover:text-blue-400 transition-colors" style={({ isActive }) => ({color: isActive ? '#6DA2FF' : '',})}>Support</NavLink>
         </div>
 
         <button
@@ -44,11 +44,11 @@ const Navbar = () => {
         toggle&&
         <div
           className={`fixed top-0 w-full flex bg-white  flex-col items-center gap-10 py-10 text-gray-500 font-all transition-all duration-300 lg:hidden z-10`}>
-          <Link to="/signup" className="hover:text-blue-400 transition-colors">Signup</Link>
-          <Link to="/about" className="hover:text-blue-400 transition-colors">About</Link>
-          <Link to="/products" className="hover:text-blue-400 transition-colors">Products</Link>
-          <Link to="/pricing" className="hover:text-blue-400 transition-colors">Pricing</Link>
-          <Link to="/support" className="hover:text-blue-400 transition-colors">Support</Link>
+          <NavLink to="/signup" className="hover:text-blue-400 transition-colors">Signup</NavLink>
+          <NavLink to="/about" className="hover:text-blue-400 transition-colors">About</NavLink>
+          <NavLink to="/products" className="hover:text-blue-400 transition-colors">Products</NavLink>
+          <NavLink to="/pricing" className="hover:text-blue-400 transition-colors">Pricing</NavLink>
+          <NavLink to="/support" className="hover:text-blue-400 transition-colors">Support</NavLink>
         </div>
       }
     </>
