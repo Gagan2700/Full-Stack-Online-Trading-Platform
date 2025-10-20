@@ -18,4 +18,8 @@
     .mainpad{
         @apply px-5 lg:px-[13rem];
     }
+
+    span{
+        @apply text-blue-600 hover:text-gray-800 cursor-pointer;
+    }
 }
