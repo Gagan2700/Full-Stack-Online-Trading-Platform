@@ -18,4 +18,12 @@
     .mainpad{
         @apply px-5 lg:px-[13rem];
     }
+
+    table,th,td{
+        @apply border-gray-200 border-1;
+    }
+
+    td,.sup>li{
+        @apply p-3 text-blue-400 hover:text-black text-[1.05rem] cursor-pointer list-disc;
+    }
 }
