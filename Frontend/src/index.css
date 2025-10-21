@@ -18,4 +18,21 @@
     .mainpad{
         @apply px-5 lg:px-[13rem];
     }
+
+    .tara{
+        @apply flex flex-col justify-center items-center md:w-[30%] gap-3;
+    }
+
+    .tara>img{
+        @apply w-[15rem] h-[15rem];
+    }
+
+    th,td{
+        @apply border-[1px] border-gray-200 p-[0.7rem] text-[1rem];
+    }
+
+    tr:nth-child(2n){
+        @apply bg-gray-100;
+    }
+
 }
