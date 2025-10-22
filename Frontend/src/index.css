@@ -46,4 +46,11 @@
         @apply bg-gray-100;
     }
 
+    .support{
+        @apply border-gray-200 border-1;
+    }
+
+    .support,.sup>li{
+        @apply p-3 text-blue-400 hover:text-black text-[1.05rem] cursor-pointer list-disc;
+    }
 }
