@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { watchlist } from '../Data/data';
 import { MdKeyboardArrowUp,MdOutlineKeyboardArrowDown  } from "react-icons/md";
@@ -67,13 +67,26 @@ const WatchListItem = ({stock})=>{
   );
 }
 
+const handleClick = ()=>{
+  let [display,setDisplay] = useState(true);
+
+}
+
 const OverLay=({uid})=>{
   return (
     <div className="actions">
-      <button className="buy">B</button>
+      <button className="buy" onClick={handleClick}>B</button>
       <button className="sell">S</button>
       <button className="action"><IoIosTrendingUp /></button>
       <button className="action"><RiDeleteBin6Line /></button>
     </div>
   )
+}
+
+const Buy = ()=>{
+  return(
+    <div className="buy-box">
+      
+    </div>
+  );
 }

@@ -3,7 +3,7 @@ import Home from "./components/Home";
 
 const Apps = () => {
   return (
-    <Home/>
+      <Home />
   );
 };
 

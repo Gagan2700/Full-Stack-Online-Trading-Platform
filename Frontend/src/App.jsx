@@ -7,6 +7,7 @@ import Products from "./landing pages/Products"
 import Signup from "./landing pages/Signup"
 import Support from "./landing pages/Support"
 import NotFound from "./landing pages/NotFound"
+import Login from "./landing pages/Login"
 import { createBrowserRouter ,RouterProvider} from "react-router";
 
 const router=createBrowserRouter([
@@ -55,6 +56,14 @@ const router=createBrowserRouter([
     element:<>
       <Navbar/>
       <Signup/>
+      <Footer/>
+    </>
+  },
+  {
+    path:"/login",
+    element:<>
+      <Navbar/>
+      <Login/>
       <Footer/>
     </>
   },
