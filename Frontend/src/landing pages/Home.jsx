@@ -9,6 +9,7 @@ import logo1 from "/zero.png";
 import logo2 from "/twenty.png";
 import varsity from "/education.svg";
 
+
 const zerodhaProps = {
   customerFirstTitle: "Customer-first always",
   customerFirstDescription: "That's why 1.6+ crore customers trust Zerodha with ~ ₹6 lakh crores of equity investments, making us India’s largest broker; contributing to 15% of daily retail exchange volumes in India.",
@@ -33,6 +34,7 @@ const zerodhaProps = {
 
 
 const Home = () => {
+
   return (
     <>
         <Hero></Hero>

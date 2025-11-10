@@ -9,6 +9,8 @@ import Support from "./landing pages/Support"
 import NotFound from "./landing pages/NotFound"
 import Login from "./landing pages/Login"
 import { createBrowserRouter ,RouterProvider} from "react-router";
+import { useEffect } from "react";
+import axios from "axios"
 
 const router=createBrowserRouter([
   {
@@ -78,6 +80,21 @@ const router=createBrowserRouter([
 ])
 
 function App() {
+    useEffect(()=>{
+        let check = async ()=>{
+            let {data} = await axios.post(
+            "http://localhost:8080/",
+            {},
+            {withCredentials:true}
+            )
+            let {success} = data;
+            if(success){
+              window.location.href = "http://localhost:5174/"
+            }
+        }
+        check();
+    },
+    [])
   return (
     <RouterProvider router={router} />
   )
